@@ -42,7 +42,7 @@ const Home = () => {
 						{r.hasOwnProperty('release_time_at') &&
 								<div><span class={style.label}>Release Time At: </span><span class={style.labelValue}>{r.release_time_at}</span></div>
 						}
-						{r.hasOwnProperty('num_days') && <div><span class={style.label}>Joined Resy: </span><span class={style.labelValue}>{r.num_days}</span></div>}
+						{r.hasOwnProperty('num_days') && <div><span class={style.label}>Days Out: </span><span class={style.labelValue}>{r.num_days}</span></div>}
 					</div>
 				))
 			}
