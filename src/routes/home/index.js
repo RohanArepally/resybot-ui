@@ -20,7 +20,7 @@ const Home = () => {
 		filteredRestaurants = filteredRestaurants.filter(r => r.hasOwnProperty('release_time_at'))
 	}
 	if (shouldFilterNew) {
-		filteredRestaurants = filteredRestaurants.filter(r => (Math.floor(Date.now() / 1000) - r.created_at) <= 1210000).sort((a,b) => a.created_at - b.created_at);
+		filteredRestaurants = filteredRestaurants.filter(r => (Math.floor(Date.now() / 1000) - r.created_at) <= 1210000).sort((a,b) => b.created_at - a.created_at);
 	}
 
 	filteredRestaurants = (searchText === "" && (!shouldFilterNew && !shouldFilterReleaseTime)) ? [] : filteredRestaurants;
