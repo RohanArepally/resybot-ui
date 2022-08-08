@@ -19,6 +19,7 @@ input::-moz-focus-inner {
 	border-radius: 25px;
 	border: 2px solid #008080;
 	padding: 20px;
+	font-size:16px
 }
 
 .box {
