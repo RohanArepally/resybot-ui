@@ -1,5 +1,76 @@
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
 .home {
 	padding: 56px 20px;
 	min-height: 100%;
 	width: 100%;
+	max-width: 720px;
+	margin: auto;
+}
+
+.search {
+	margin-top: 18px;
+	width: 100%;
+	height: 42px;
+	border-radius: 25px;
+	border: 2px solid #008080;
+	padding: 20px;
+}
+
+.box {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	border: #008080 ridge 1px;
+	border-radius: 10px;
+	margin: 3px;
+	margin-bottom: 8px;
+	width: 100%;
+	padding-left: 10px;
+}
+
+.label {
+	margin-right: 12px;
+}
+
+.labelValue {
+	float: right;
+	margin-right: 12px;
+}
+
+.name {
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	margin-top: 8px;
+	margin-bottom: 12px;
+	justify-content: center;
+}
+
+.button {
+	padding: 12px;
+	background-color: white;
+	color: #008080;
+	border: none;
+	border: 1px solid #008080;
+	border-radius: 4px;
+	margin-right: 4px;
+}
+
+.buttonActive {
+	padding: 12px;
+	background-color: #008080;
+	color: white;
+	border: none;
+	border: 1px solid #008080;
+	border-radius: 4px;
+	margin-right: 4px;
 }
